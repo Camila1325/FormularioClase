@@ -1,67 +1,39 @@
 :root{
     --white: #fff;
-    --aqua: #3BDB96;
+    --blue: #7bcfeb;
     --black: #000;
 }
 
 body{
     margin: 0;
-    background-color: var(--aqua);
-    padding: 80px;
+    background-color: var(--blue);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 .container{
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
-.container *{
-    box-sizing: border-box;
-}
-
-.flex-outer,
-.flex-inner{
-    list-style-type: none;
-    padding: 0;
-}
-
-.flex-outer{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.flex-outer li,
-.flex-inner {
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.flex-inner{
-    padding: 0 8px;
+.containerSection{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;   
     justify-content: space-between;
+    margin-right: 23px;
+    margin-left: 2em;
+    border: 5px solid var(--white);
+    border-radius: 1%;
 }
 
-.flex-outer > li:not(:last-child){
-    margin-bottom: 20px;
-}
-
-.flex-outer li label, 
-.flex-outer li p{
-    padding: 8px;
-    font-weight: 300;
-    letter-spacing: .09em;
-    text-transform: uppercase;
-}
-
-.flex-outer > li > label,
-.flex-outer li p {
-    flex: 1 0 120px;
-    max-width: 220px;
-}
-
-.flex-outer > li > label > *,
-.flex-inner{
-    flex: 1 0 220px;
+.containerSectionDos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;   
+    justify-content: space-arounds;
+    margin-right: 2em;
+    color: var(--white);
+    border: 5px solid var(--black);
 }
